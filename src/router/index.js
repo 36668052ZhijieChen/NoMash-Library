@@ -4,6 +4,10 @@ import AboutView from '../views/AboutView.vue'
 import LoginView from '../views/LoginView.vue'
 import AccessDeniedView from '../views/AccessDeniedView.vue'
 import { isAuthenticated } from '../auth'
+import FirebaseSigninView from '@/views/FirebaseSigninView.vue'
+import FirebaseRegisterView from '@/views/FirebaseRegisterView.vue'
+import RoleDashboardView from '@/views/RoleDashboardView.vue'
+import FirebaseLogoutView from '@/views/FirebaseLogoutView.vue'
 
 const routes = [
   {
@@ -26,6 +30,26 @@ const routes = [
     path: '/access-denied',
     name: 'AccessDenied',
     component: AccessDeniedView
+  },
+  {
+    path: '/FireLogin',
+    name: 'FireLogin',
+    component: FirebaseSigninView
+  },
+  {
+    path: '/FireRegister',
+    name: 'FireRegister',
+    component: FirebaseRegisterView
+  },
+  {
+    path: '/RoleDashboard',
+    name: 'RoleDashboard',
+    component: RoleDashboardView
+  },
+  {
+    path: '/FireLogout',
+    name: 'FireLogout',
+    component: FirebaseLogoutView
   }
 ]
 

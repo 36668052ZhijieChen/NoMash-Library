@@ -3,6 +3,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { createApp } from 'vue'
+import './Firebase/init.js'
 import App from './App.vue'
 import router from './router'
 
